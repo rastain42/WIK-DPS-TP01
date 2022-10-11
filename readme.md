@@ -1,12 +1,8 @@
 # TP1 DevOps - Romain Michel DEV A YNOV
 
-## prerequis
-
-
-
 ## how to install and run
 
-```
+```powershell
 git clone git@github.com:rastain42/WIK-DPS-TP01.git
 
 mkdir WIK-DPS-TP01\typescript-nodejs\
