@@ -5,16 +5,16 @@
 ```powershell
 git clone git@github.com:rastain42/WIK-DPS-TP01.git
 
-mkdir WIK-DPS-TP01\typescript-nodejs\
-
 cd WIK-DPS-TP01\typescript-nodejs\
 
-npm install git express
+npm install
 
-npm install typescript ts-node @types/node @types/express --save-dev
+node build\index.js
+```
 
-npx ts-node index.ts
-
+### how to re- build
+```powershell
+npx tsc
 ```
 
 ## usage
