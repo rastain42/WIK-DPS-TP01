@@ -7,12 +7,14 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const dotenv = require('dotenv');
 dotenv.config();
-app.get('/', (req, res) => {
-    res.send('This is a test web page!');
-});
+const port = process.env.PING_LISTEN_PORT == null ? 3000 : process.env.PING_LISTEN_PORT;
 app.get('/ping', (req, res) => {
     res.send(req.headers);
 });
-app.listen(process.env.PING_LISTEN_PORT, () => {
-    console.log('The application is listening on port ' + process.env.PING_LISTEN_PORT);
+app.get('*', (req, res) => {
+    res.status(404);
+    res.send();
+});
+app.listen(port, () => {
+    console.log('The application is listening on port ' + port + '!');
 });
