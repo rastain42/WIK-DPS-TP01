@@ -2,19 +2,20 @@
 
 ## prerequis
 
-```
-npm install git express
-```
-```
- npm install typescript ts-node @types/node @types/express --save-dev
-```
+
 
 ## how to install and run
 
 ```
 git clone git@github.com:rastain42/WIK-DPS-TP01.git
 
+mkdir WIK-DPS-TP01\typescript-nodejs\
+
 cd WIK-DPS-TP01\typescript-nodejs\
+
+npm install git express
+
+npm install typescript ts-node @types/node @types/express --save-dev
 
 npx ts-node index.ts
 
