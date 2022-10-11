@@ -21,6 +21,6 @@ npx tsc
 
 open an internet browser at 'localhost:3000'
 
-you navigate to 'localhost:3000/ping' to get your own request headers
+GET -> 'localhost:3000/ping' to get your own request headers
 
 other routes will return 404 blank page
